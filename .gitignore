@@ -1,0 +1,6 @@
+node_modules/
+weather.db
+*.log
+.DS_Store
+
+

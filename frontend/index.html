@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather App - Assessment</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Weather App - by Reddy</h1>
+      <button id="infoBtn" title="About PMA">i</button>
+    </header>
+    <div class="container">
+    <section class="controls">
+      <input id="locationInput" placeholder="Enter city, zip, landmark..." />
+      <button id="searchBtn">Search</button>
+      <button id="geoBtn">Use My Location</button>
+    </section>
+
+    <section id="results">
+      <div id="geocodeResults" class="panel"></div>
+      <div id="weather" class="panel"></div>
+    </section>
+
+    <section class="panel">
+      <h3>Save Query (CRUD)</h3>
+      <div class="crud">
+        <input id="crudLocation" placeholder="Location" />
+        <input id="crudFrom" type="date" />
+        <input id="crudTo" type="date" />
+        <button id="crudCreate">Create</button>
+        <button id="crudRefresh">Refresh List</button>
+        <a href="/api/export.json" target="_blank">Export JSON</a>
+        <a href="/api/export.csv" target="_blank">Export CSV</a>
+      </div>
+      <div id="crudList"></div>
+    </section>
+    </div>
+
+    <dialog id="infoDialog">
+      <h3>About PM Accelerator</h3>
+      <p>Learn more on our LinkedIn page: <a href="https://www.linkedin.com/company/product-manager-accelerator/" target="_blank" rel="noopener noreferrer">Product Manager Accelerator</a>.</p>
+      <button id="closeInfo">Close</button>
+    </dialog>
+
+    <script src="main.js" type="module"></script>
+  </body>
+  </html>
+
+
