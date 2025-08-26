@@ -27,6 +27,13 @@ npm start
 http://localhost:3000
 ```
 
+### Deploy (Render)
+1) Push to GitHub (public repo)
+2) Add `render.yaml` to repo (already included)
+3) In Render: New + Blueprint > connect your repo > deploy
+   - It will build with `npm install` and run `npm start`
+   - Healthcheck: `/api/health`
+
 ### Notes
 - Database file `weather.db` is created automatically in project root
 - APIs: Open-Meteo, Nominatim (OpenStreetMap)
